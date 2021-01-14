@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFE3B1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  width: 373px;
+  height: 562px;
+  left: 0px;
+  top: 0px;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+}
+
+.card__sale {
+  padding: 1px 50px;
+  width: 200px;
+  transform: rotate(-37deg) translate(320px, -500px);
+  background: orange;
+}
+
+
+.card__sale-txt {
+  line-height: 1px;
+  color: white;
+  font-size: 18px;
+}
+
+.card__mark {
+  color: #E18F00;
+  margin: 8px 0 0 338px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card__content {
+  width: 373px;
+  height: 213px;
+  background: rgba(255, 162, 0, 0.15);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.card__title {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.card__caption {
+  color: white;
+  width: 347px;
+  height: 46px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.card__button {
+  width: 332px;
+  height: 53px;
+  background: #BDBDBD;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.card__button:hover {
+  background-color: #b3b3b3;
+}
+
+.card__button:active {
+  background-color: orange;
+}

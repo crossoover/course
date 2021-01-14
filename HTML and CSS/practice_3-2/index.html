@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+   <title>Document</title>
+   <link rel="stylesheet" href="./css/base.css">
+   <link rel="stylesheet" href="./css/checkbox.css">
+   <link rel="stylesheet" href="./css/card.css">
+   <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+   <div class="plans">
+      <h1 class="plans__heading">Choose a plan</h1>
+      <div class="plans__billing">
+         <p class="billing__check-text">Billed monthly</p>
+
+         <div class="billing__check">
+            <input class="check__input" type="checkbox" value="None" id="billing__check" name="check" checked />
+            <label class="check__label" for="billing__check"></label>
+         </div>
+
+         <p class="billing__check-text">Billed anually</p>
+      </div>
+      <div class="plans__card-wrapper">
+         <div class="plans__card">
+            <h2 class="card__heading">Starter</h2>
+            <p class="card__price"><span class="price__number">$19</span>/month</p>
+            <ul class="card__features">
+               <li class="features__item">500 MAUs</li>
+               <li class="features__item">3 projects</li>
+               <li class="features__item">Unlimited guides</li>
+               <li class="features__item">Unlimited flows</li>
+               <li class="features__item">Unlimited branded themes</li>
+               <li class="features__item">Email support</li>
+            </ul>
+            <button class="card__button">Choose plan</button>
+         </div>
+
+         <div class="plans__card">
+            <h2 class="card__heading">Pro</h2>
+            <p class="card__price"><span class="price__number">$99</span>/month</p>
+            <ul class="card__features">
+               <li class="features__item">All starter features, plus:</li>
+               <li class="features__item">Unlimited projects</li>
+               <li class="features__item">Unlimited fully customizable themes</li>
+               <li class="features__item">A dedicated Customer Success Manager</li>
+            </ul>
+            <button class="card__button card__button2">Choose plan</button>
+         </div>
+
+         <div class="plans__card">
+            <h2 class="card__heading">Enterprise</h2>
+            <p class="card__price card__price-with-text"><span class="price__text">Let`s talk!</span></p>
+            <ul class="card__features">
+               <li class="features__item"> All Pro features</li>
+               <li class="features__item">Unlimited MAUs</li>
+               <li class="features__item">Dedicated environment</li>
+               <li class="features__item">Enterprise account administration</li>
+               <li class="features__item">Premium support and services</li>
+            </ul>
+            <button class="card__button card__button3">Choose plan</button>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

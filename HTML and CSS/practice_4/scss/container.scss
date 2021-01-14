@@ -1,0 +1,45 @@
+.header-menu{
+   position: fixed;
+   height: 60px;
+   width: 100%;
+   background: #050505;
+   padding: 0;
+   display: flex;
+   justify-content: flex-end;
+   
+   @media screen and (max-width:768px){
+      justify-content: center;
+   }
+
+   .menu-toggle{
+      width: 25px;
+      height: 25px;
+      &::before{
+         position: relative;
+         top: 33.333%;
+         left: 0;
+         height: 0px;
+         border: 1px solid red;
+         width: 100%;
+         background: white;
+      }
+
+   }
+   .menu{
+      padding-top: 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      border: 1px solid red;
+      width: 300px;
+      height: 100%;
+      .menu-item{
+         color: white;
+         text-decoration: none;
+         margin: 0 0 0 30px;
+         position: relative;
+         &:hover{
+            color: red;
+         }
+      }
+   }
+}

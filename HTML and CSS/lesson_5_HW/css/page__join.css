@@ -1,0 +1,59 @@
+.page__join {
+   height: 60vh;
+   background: #Fff;
+   padding-top: 50px;
+}
+
+.page__join-heading {
+   font-weight: normal;
+   font-size: 50px;
+   line-height: 55px;
+   letter-spacing: 1.30425px;
+   text-align: center;
+   color: #3F3F3F;
+
+}
+
+.page__join-description {
+   text-align: center;
+   font-weight: normal;
+   font-size: 25px;
+   line-height: 31px;
+   text-align: center;
+   letter-spacing: 0.652123px;
+   width: 50%;
+   margin: 50px auto;
+   color: #3F3F3F;
+
+}
+
+.page__join-form {
+   width: 50%;
+   margin: 0 auto;
+}
+
+.page__join-email {
+   width: 65%;
+   height: 70px;
+   background: #fff;
+   padding-left: 30px;
+}
+
+.page__join-email::placeholder {
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 25px;
+   letter-spacing: 0.521698px;
+   color: #3F3F3F;
+   opacity: 0.19;
+}
+
+.page__join-button {
+   padding: 18px 22px;
+   float: right;
+   letter-spacing: 0.626038px;
+   background: #FEDE60;
+   color: #FFFFFF;
+   font-weight: 900;
+   font-size: 24px;
+}

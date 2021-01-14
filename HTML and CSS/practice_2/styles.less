@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #f2f2f2;
+    font-family: Helvetica, serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 32px 20px rgba(4, 22, 87, 0.0873306);
+    border-radius: 20px;
+    width: 410px;
+    height: 550px;
+    padding: 20px 50px 65px 50px;
+    box-sizing: border-box;
+
+    h1 {
+        font-weight: normal;
+        font-size: 34px;
+    }
+
+    .number {
+        font-weight: bold;
+        font-size: 36px;
+        margin-left: 5px;
+
+    }
+
+    .views {
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 5px;
+        margin-top: -20px;
+        padding-bottom: 45px;
+        border-bottom: 1px solid #CBD0E1;
+    }
+
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+
+
+
+        .number {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 35px;
+            line-height: 0.1;
+        }
+
+        .sub-title {
+            img {
+                width: 19px;
+                display: inline-block;
+            }
+
+            .text {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 0.5;
+                margin-left: 5px;
+                display: inline;
+            }
+        }
+    }
+
+    .btn {
+        margin: 0 auto;
+        box-sizing: border-box;
+        margin-top: 50px;
+        padding: 20px 60px;
+        background: #FFCF54;
+        border-radius: 29px;
+        transition-property: background, letter-spacing, border-radius;
+        transition-duration: 0.2s, 0.5s, 0.7s;
+
+        &:hover {
+            background: lightgrey;
+            letter-spacing: 3px;
+            border-radius: 20px;
+        }
+
+        a {
+            text-decoration: none;
+
+            p {
+                font-weight: bold;
+                font-size: 16px;
+                color: black;
+                display: inline;
+            }
+
+            img {
+                position: absolute;
+                width: 15px;
+                margin: 2px 0 0 10px;
+            }
+        }
+
+    }
+}

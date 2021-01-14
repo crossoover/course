@@ -1,0 +1,74 @@
+.plans__card {
+   width: 250px;
+   height: 410px;
+   margin: 0 20px;
+   background: #22262C;
+   border-radius: 10px;
+   padding: 15px 45px;
+}
+
+.card__heading {
+   font-weight: 600;
+   font-size: 18px;
+   text-align: center;
+   margin-top: 10px;
+}
+
+.card__price {
+   margin-top: 10px;
+   font-weight: 600;
+   font-size: 18px;
+   text-align: center;
+   height: 50px;
+}
+
+.price__number {
+   font-weight: bold;
+   font-size: 40px;
+}
+
+.card__price-with-text {
+   height: 40px;
+   margin-top: 25px;
+}
+
+.price__text {
+   font-weight: bold;
+   font-size: 26px;
+}
+
+.card__features {
+   margin-top: 30px;
+   list-style-image: url(../images/2.png);
+}
+
+.features__item {
+   font-size: 10px;
+   line-height: 30px;
+   width: 120%;
+}
+
+.card__button {
+   position: relative;
+   margin: 30px 0 0 5px;
+   width: 150px;
+   height: 40px;
+   outline: none;
+   border: 1px solid #BC1E4A;
+   border-radius: 4px;
+   background: transparent;
+   color: white;
+   transition: 0.2s;
+}
+
+.card__button:hover {
+background: #BC1E4A;
+}
+
+.card__button2 {
+   margin: 89px 0 0 5px;
+}
+
+.card__button3 {
+   margin: 55px 0 0 5px;
+}

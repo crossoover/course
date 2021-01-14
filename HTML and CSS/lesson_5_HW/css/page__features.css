@@ -1,0 +1,52 @@
+.page__features {
+   background: url(../images/bg.png);
+   width: 100%;
+   height: 100vh;
+   background-size: contain;
+   padding: 70px;
+   display: flex;
+}
+
+.page__features-text {
+   width: 50%;
+   margin-top: 10%;
+}
+
+.page__features-main-heading {
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 50px;
+   letter-spacing: 1.23077px;
+
+   color: #3F3F3F;
+}
+
+.page__features-secondary-heading {
+   font-weight: normal;
+   font-size: 30px;
+   line-height: 38px;
+   letter-spacing: 0.923077px;
+   color: #7A7A7A;
+}
+
+.page__features-description {
+   margin-top: 45px;
+   font-weight: normal;
+   font-size: 22px;
+   line-height: 28px;
+   display: flex;
+   align-items: flex-end;
+   letter-spacing: 0.676923px;
+   width: 90%;
+   color: #3F3F3F;
+
+}
+
+.page__features-illustration {
+   width: 50%;
+}
+
+.features-illustration__image {
+   width: 120%;
+   margin-left: -10%;
+}

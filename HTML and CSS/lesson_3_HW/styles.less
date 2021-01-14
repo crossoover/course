@@ -1,0 +1,94 @@
+body {
+    background: #74408C;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        .window {
+            margin: 0;
+            padding: 0;
+            width: 463px;
+            height: 402px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            padding-top: 15px;
+
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                color: #74408C;
+            }
+
+            form {
+                .email {
+                    padding-left: 16px;
+                    margin-left: 34px;
+                    width: 377px;
+                    height: 55px;
+                    background: #E5E9ED;
+                    border: 1px solid #C9C9C9;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    transition: 0.3s;
+                    
+                    &:hover{
+                        background: #fff;
+                        border: 1px grey solid;
+                    }
+                    &:focus{
+                        transform: translateY(27px);
+                        background: #fff;
+                        border: 1px grey solid;
+                    }
+                }
+
+                .password {
+                    padding-top: 2px;
+                    font-size: 15px;
+                    margin-top: 41px;
+                    padding-left: 16px;
+                    margin-left: 34px;
+                    width: 377px;
+                    height: 53px;
+                    background: #E5E9ED;
+                    border: 1px solid #C9C9C9;
+                    border-radius: 5px;
+                    
+                    &:hover{
+                        background: #fff;
+                        border: 1px grey solid;
+                    }
+                    &:focus{
+                        background: #fff;
+                        border: 1px grey solid;
+                    }
+                }
+
+                
+            }
+            .signIn {
+                    margin-top: 55px;
+                    margin-left: 34px;
+                    width: 397px;
+                    height: 55px;
+                    background: #74408C;
+                    border: 1px solid #74408C;
+                    border-radius: 5px;
+                    color: white;
+                    transition: 0.2s;
+                    
+                    &:hover{
+                        background: #B649E8;
+                        border: 1px solid #B649E8;
+                    }
+                }
+        }
+    }
+}
