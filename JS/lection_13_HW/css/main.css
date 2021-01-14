@@ -1,0 +1,39 @@
+.adv-card {
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.123);
+}
+.adv-card .adv-card__pic {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.adv-card .adv-card__pic .adv-card__img {
+  width: 100%;
+}
+.adv-card .adv-card__text-content {
+  position: absolute;
+  text-align: justify;
+  transform: translateY(-100%);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  width: 55%;
+  height: 97%;
+}
+.adv-card .adv-card__text-content .adv-card__title {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05), -2px -2px 5px rgba(0, 0, 0, 0.05);
+}
+.adv-card .adv-card__text-content .adv-card__description {
+  margin: 10px 0;
+}
+
+.grid {
+  width: 80vw;
+  margin: 100px auto;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */
