@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+   <button class="btn">
+      <div class="circle">Click me</div>
+   </button>
+   <script>
+      const main = document.querySelector('body');
+      const button = document.querySelector('.btn');
+      const getRandomColor = () => {
+         num1 = Math.floor(Math.random() * 256);
+         num2 = Math.floor(Math.random() * 256);
+         num3 = Math.floor(Math.random() * 256);
+         let color = ('rgb(' + num1 + ', ' + num2 + ', ' + num3 + ')');
+         return color;
+      }
+
+      button.addEventListener('click', () => {
+         const buttonColor = getRandomColor();
+         console.log(buttonColor);
+         button.style.backgroundColor = buttonColor;
+         main.style.backgroundColor = buttonColor;
+      })
+   </script>
+</body>
+
+</html>

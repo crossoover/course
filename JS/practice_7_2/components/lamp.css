@@ -1,0 +1,7 @@
+.lamp {
+   border-radius: 100px;
+   transition: all 0.2s;
+   box-shadow: -4px -4px 4px #313131,
+      4px 4px 4px #454545;
+   margin: 15px;
+}

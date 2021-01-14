@@ -1,0 +1,21 @@
+body {
+   transition: 1s;
+}
+
+.btn {
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 200px;
+   height: 200px;
+   font-size: 30px;
+   border: none;
+   outline: none;
+   background-color: red;
+   color: black;
+   margin-top: 200px;
+   border-radius: 100px;
+   cursor: pointer;
+   transition: 0.3s;
+   text-transform: uppercase;
+}

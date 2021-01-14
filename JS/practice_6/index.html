@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="./task1.js"></script>
+   <script src="./task2.js"></script>
+   <script src="./task3.js"></script>
+   <script src="./task4.js"></script>
+   <script src="./task5.js"></script>
+   <script src="./task6.js"></script>
+   <script src="./task7.js"></script>
+   <script src="./task8.js"></script>
+   <script src="./task9.js"></script>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+   <button class="btn">Click me</button>
+   <script>
+      const main = document.querySelector('body');
+      const button = document.querySelector('.btn');
+      const getRandomColor = () => {
+         num1 = Math.floor(Math.random() * 256);
+         num2 = Math.floor(Math.random() * 256);
+         num3 = Math.floor(Math.random() * 256);
+         return ('rgb(' + num1 + ', ' + num2 + ', ' + num3 + ')')
+      }
+
+      console.log('1. random color = ' + getRandomColor());
+      button.addEventListener('click', () => {
+         button.style.backgroundColor = getRandomColor();
+         main.style.backgroundColor = button.style.backgroundColor;
+      })
+   </script>
+</body>
+
+</html>
