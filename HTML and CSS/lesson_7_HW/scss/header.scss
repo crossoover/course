@@ -1,0 +1,294 @@
+@mixin sandColorHover {
+   transition: 0.3s;
+   color: rgb(18, 18, 18);
+
+   &:hover {
+      color: rgb(201, 197, 190);
+   }
+}
+
+@mixin iconRotateHover {
+   transition: 1s;
+
+   &:hover {
+      transform: scale(1.1) rotate(360deg);
+      transition: 0.3s;
+   }
+}
+
+@mixin positionRelativeCenter {
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+@mixin burgerLine {
+   content: '';
+   margin-left: -50%;
+   width: 100%;
+   height: 2px;
+   background: #000;
+   position: absolute;
+}
+
+
+.header__menu {
+   margin-top: 50px;
+   position: fixed;
+   height: 120px;
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   background: white;
+   z-index: 10;
+
+
+   .menu__mobile {
+      display: none;
+   }
+
+   .menu__toggle {
+      visibility: hidden;
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      width: 30px;
+      height: 30px;
+      background: #fff;
+
+
+      &_active {
+
+         &::before {
+            transform: translateY(7.5px) rotate(45deg);
+            transition: 0.3s;
+         }
+
+         &::after {
+            transform: translateY(-8px) rotate(-45deg);
+            transition: 0.3s;
+         }
+      }
+
+
+      &::before {
+         @include burgerLine;
+         top: 20%;
+         transition: 0.3s;
+      }
+
+      &::after {
+         @include burgerLine;
+         bottom: 20%;
+         transition: 0.3s;
+      }
+
+   }
+
+   .header__logo {
+      display: flex;
+      flex-flow: column wrap;
+      text-decoration: none;
+      padding: 30px 0 0 40px;
+      width: 320px;
+
+      .logo__head {
+         font-size: 45px;
+         line-height: 30px;
+         font-weight: 600;
+         letter-spacing: 1px;
+
+         @include sandColorHover;
+      }
+
+      .logo__bottom {
+         font-size: 16px;
+         letter-spacing: 0.333px;
+         margin-top: 10px;
+         width: 150px;
+         @include sandColorHover;
+      }
+   }
+
+   .menu__items {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+
+      .header__link-wrapper {
+         padding-top: 45px;
+         display: flex;
+         height: 120px;
+
+         .header__link {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            @include sandColorHover;
+         }
+      }
+
+      .header__social {
+         display: flex;
+         padding: 40px 40px 0 0;
+
+         .social__login {
+            display: flex;
+            flex-flow: row nowrap;
+            text-decoration: none;
+            width: 100px;
+            height: 25px;
+            margin: 5px 60px 0 0;
+
+            .login__image {
+               width: 25px;
+            }
+
+            &:hover .login__image {
+               background: rgb(201, 197, 190);
+               border-radius: 100px;
+               transition: 0.3s;
+            }
+
+            &:hover .login__text {
+               color: rgb(201, 197, 190);
+               transition: 0.3s;
+            }
+
+
+            .login__text {
+               font-size: 17px;
+               letter-spacing: 0.5px;
+               font-weight: bold;
+               margin: 3px 0 0 5px;
+               @include sandColorHover;
+            }
+         }
+
+         .social__icon-wrapper {
+            display: flex;
+            flex-flow: row nowrap;
+
+            .social__icon {
+               margin: 0px 5px;
+
+               &:hover .icon__image {
+                  @include iconRotateHover;
+               }
+
+               .icon__image {
+                  width: 20px;
+                  margin: 6px;
+                  transition: 0.3s;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width:991px) {
+   .header__menu {
+      .menu__items {
+         visibility: hidden;
+      }
+
+      .menu__toggle {
+         visibility: visible;
+      }
+
+      .menu__mobile {
+         display: flex;
+         flex-direction: column;
+         position: absolute;
+         visibility: hidden;
+         margin-top: 118px;
+         width: 100%;
+         transform: translateX(-100%);
+         height: 100vh;
+         background: #fff;
+         transition: 0.2s;
+
+         &_active {
+            visibility: visible;
+            transform: translateX(0);
+         }
+
+         .header__link-wrapper {
+            margin-left: 40px;
+
+            .header__link {
+               line-height: 50px;
+               font-size: 25px;
+               text-decoration: none;
+               @include sandColorHover;
+            }
+         }
+
+         .header__social {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .social__login {
+               // border: 1px solid red;
+               width: 100px;
+               transform: scale(1.5);
+               margin-top: 12vh;
+               display: flex;
+               text-decoration: none;
+
+               .login__image {
+                  width: 30px;
+               }
+
+               &:hover .login__image {
+                  background: rgb(201, 197, 190);
+                  border-radius: 100px;
+                  transition: 0.3s;
+               }
+
+               &:hover .login__text {
+                  color: rgb(201, 197, 190);
+                  transition: 0.3s;
+               }
+
+
+               .login__text {
+                  font-size: 17px;
+                  letter-spacing: 0.5px;
+                  font-weight: bold;
+                  margin: 4px 0 0 5px;
+                  @include sandColorHover;
+               }
+            }
+
+            .social__icon-wrapper {
+               // border: 1px solid green;
+               height: 30vh;
+               display: flex;
+               flex-flow: row wrap;
+
+               .social__icon {
+                  width: 50%;
+                  // border: 1px solid green;
+
+                  &:hover .icon__image {
+                     width: 50%;
+                  }
+
+                  .icon__image {
+                     width: 30%;
+                     @include positionRelativeCenter;
+                     transition: 0.3s;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

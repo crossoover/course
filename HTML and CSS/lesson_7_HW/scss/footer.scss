@@ -1,0 +1,133 @@
+.page__footer {
+   width: 100%;
+   min-height: 40vh;
+   background: #121212;
+   padding-top: 50px;
+
+   .footer__link-wrapper {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+
+      .footer__link {
+         text-decoration: none;
+         color: white;
+         letter-spacing: 0.5px;
+         font-size: 16px;
+         line-height: 30px;
+      }
+   }
+
+   .footer__description {
+      color: white;
+      letter-spacing: 1.2px;
+      font-size: 16px;
+      max-width: 740px;
+      margin: 50px auto 20px;
+      font-weight: lighter;
+   }
+
+   .footer__form {
+      max-width: 740px;
+      margin: 20px auto 0;
+      padding-bottom: 100px;
+      display: flex;
+      flex-flow: row wrap;
+
+      .form__label {
+         width: 100%;
+         color: grey;
+         margin-bottom: 5px;
+      }
+
+      .form__email {
+         width: 75%;
+
+         height: 35px;
+         border: none;
+         background: transparent;
+         border-bottom: 2px solid white;
+         padding-left: 20px;
+         transition: 0.1s;
+
+         &:hover {
+            background: transparent;
+            border-bottom: 4px solid white;
+         }
+
+         &:focus {
+            background: transparent;
+            border-bottom: 4px solid red;
+         }
+
+         &::placeholder {
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+         }
+      }
+
+      .form__button {
+         width: 23%;
+         margin-left: 2%;
+         background: rgb(255, 254, 249);
+         letter-spacing: 0.5px;
+         font-size: 16px;
+         font-weight: bold;
+         transition: 0.3s;
+
+         &:hover {
+            background: rgb(40, 58, 163);
+            color: white;
+         }
+      }
+   }
+}
+
+@media screen and (max-width:800px) {
+   .page__footer {
+      .footer__link-wrapper {
+         text-align: center;
+         width: 100%;
+         display: flex;
+         flex-flow: column nowrap;
+
+         .link-group {
+            margin-top: 30px;
+         }
+      }
+
+      .footer__description {
+         margin-top: 70px;
+         text-align: center;
+      }
+
+      .footer__form {
+         flex-direction: column;
+         align-items: center;
+
+         .form__label {
+            display: none;
+         }
+
+         .form__email {
+            padding: 0;
+
+            &::placeholder {
+               color: white;
+               font-weight: bold;
+               font-size: 14px;
+               text-align: center;
+            }
+         }
+
+         .form__button {
+            margin-top: 30px;
+            width: 150px;
+            height: 40px;
+         }
+      }
+   }
+}

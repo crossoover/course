@@ -1,0 +1,106 @@
+.page__main {
+  z-index: 0;
+  width: 100%;
+  margin-top: -50px;
+}
+.page__main .product {
+  min-height: 150px;
+  margin: 210px 10px 0 10px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 9;
+}
+.page__main .product__image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.page__main .product__tag {
+  min-width: 80px;
+  height: 30px;
+  padding: 6px 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: #000;
+  z-index: 100;
+  position: absolute;
+  text-align: center;
+}
+.page__main .product__image {
+  width: 100%;
+}
+.page__main .product__image_back {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+}
+.page__main .product:hover .product__image_back {
+  opacity: 1;
+  transition: 0.2s;
+}
+.page__main .product .product__quick-view {
+  width: 100%;
+  height: 50px;
+  background: rgba(253, 253, 253, 0.8);
+  position: absolute;
+  padding-top: 15px;
+  z-index: 1;
+  text-align: center;
+  transition: 0.4s;
+}
+.page__main .product .quick-view__text {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.page__main .product:hover .product__quick-view {
+  transform: translateY(-50px);
+}
+.page__main .product__details {
+  background: #fff;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  margin-top: -3px;
+  position: absolute;
+}
+.page__main .product__title {
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+.page__main .product__line {
+  border-bottom: 0.1px solid black;
+  width: 20px;
+  margin: 0 auto 12px;
+}
+.page__main .product__price {
+  text-align: center;
+  font-weight: bold;
+}
+.page__main .product__add-to-cart {
+  width: 70%;
+  height: 40px;
+  background: #000;
+  margin: 10px 15%;
+  color: white;
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page__main .product__add-to-cart:hover {
+  color: #c9c5be;
+  background: #7c7a75;
+}
+.page__main .product:hover .product__add-to-cart {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=main.css.map */
